@@ -6,6 +6,11 @@ const withMDX = createMDX();
 const config = {
   reactStrictMode: true,
   output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/dubhe101',
+  trailingSlash: true,
 };
 
 export default withMDX(config);
