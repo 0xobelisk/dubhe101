@@ -23,6 +23,7 @@ export const baseOptions: BaseLayoutProps = {
       </>
     ),
   },
+  githubUrl: "https://github.com/0xobelisk/dubhe101",
   // see https://fumadocs.dev/docs/ui/navigation/links
   links: [],
 };
