@@ -1,8 +1,59 @@
 ---
 title: Build First Dubhe Dapp
 description: 使用 Dubhe 发布你的第一个 Dapp
-icon: Blocks
+icon: Atom
 ---
+
+## 配置 `sui` 的 cli 环境
+
+使用 [suiup](https://github.com/MystenLabs/suiup) 配置开发环境
+
+### From Script
+
+```shell
+curl -sSfL https://raw.githubusercontent.com/Mystenlabs/suiup/main/install.sh | sh
+```
+
+### From Cargo
+
+```shell
+cargo install --git https://github.com/Mystenlabs/suiup.git --locked
+```
+
+### 安装需要的 `sui`
+
+```shell
+suiup install sui
+suiup install sui@1.44.2 # 安装指定版本
+suiup install sui@devnet # 安装指定的 release
+```
+
+### 安装 `walrus` (可选)
+
+```shell
+suiup install walrus -y
+```
+
+## 配置 `Dubhe`
+
+### 安装 `nodejs`
+
+推荐使用 `nvm`
+
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install v18.20.8 # 推荐使用 18 的版本，和 开发者环境对齐 😄
+```
+
+## 新建基础程序
+
+```shell
+pnpm create dubhe-wip
+```
+
+按照如下的选项，选择 sui 101 的项目作为入门示例。
+
+![image](../../image.png)
 
 ## Links
 
