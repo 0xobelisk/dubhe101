@@ -9,9 +9,7 @@ const config = {
   images: {
     unoptimized: true,
   },
-  basePath: '/dubhe101',
   trailingSlash: true,
-  assetPrefix: '/dubhe101/',
 };
 
 export default withMDX(config);
