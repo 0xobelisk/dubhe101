@@ -24,9 +24,9 @@ jobs:
       - name: Add .nojekyll file
         run: touch out/.nojekyll
 
-      # - name: Write custom domain file
-      #   run: |
-      #     echo "www.example.com" > out/CNAME
+      - name: Write custom domain file
+        run: |
+          echo "dubhe101.xyz" > out/CNAME
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
