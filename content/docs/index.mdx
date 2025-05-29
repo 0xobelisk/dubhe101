@@ -116,7 +116,19 @@ pnpm run dev
 注意: testnet 的 faucet 不能用，所以，需要提前准备好 testnet 的 Sui 作为 发布 gas。
 testnet 水龙头: https://faucet.sui.io/
 
-准备好 gas 后，再次发布:
+准备好 gas 后，再次发布,就可以看到发布的结果
+
+![image](../images/testnet-publish.png)
+
+这里，你可以看到你的发布信息
+
+- 发布的交易
+- 发布的 package id
+- 更新的 Upgrade Cap
+- 在 dubhe 注册交易
+
+部署信息在 ./deployment.ts
+这里可以看到完整的 history 信息： src/counter/.history/sui_testnet/latest.json
 
 ## 相关链接
 
